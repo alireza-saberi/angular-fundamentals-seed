@@ -8,6 +8,16 @@
             <br>
             {{ isHappy ? ':)' : ':(' }}
         </fieldset>
-        
-
+        <fieldset>
+            <legend>
+                Part two
+            </legend>
+            <input 
+                type="text" 
+                [value]="name"
+                (blur)="handleBlur($event)"
+                (focus)="handleFocus($event)">
+            <br>
+            {{ name }}
+        </fieldset>
     </div>
